@@ -40,28 +40,26 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="calTotal" runat="server" OnClick="calTotal_Click" Text="Total Calories" />
         <br />
-        <br />
-        <table style="width:100%; text-align:center">
+        <table style="width:95%; text-align:center; margin-left: 25px; margin-right: 0px;" class="nav-justified">
             <tr>
-                <td style="width: 383px">Calories per Item</td>
+                <td style="width: 271px" class="modal-sm">Calories per Item</td>
+                <td style="width: 295px" class="modal-sm">Number of Items</td>
                 <td>
+                    Total Calories</td>
+            </tr>
+            <tr>
+                <td style="width: 271px; height: 20px;">
                     <asp:Label ID="calPerItem" runat="server" Text="0"></asp:Label>
                 </td>
-            </tr>
-            <tr>
-                <td style="width: 383px">Number of Items</td>
-                <td>
+                <td style="width: 295px; height: 20px;">
                     <asp:Label ID="numItems" runat="server" Text="0"></asp:Label>
                 </td>
-            </tr>
-            <tr>
-                <td style="width: 383px">Total Calories</td>
-                <td>
+                <td style="height: 20px">
                     <asp:Label ID="totalCal" runat="server" Text="0"></asp:Label>
                 </td>
             </tr>
-        </table>
-    </div>
+            </table>
+    &nbsp;</div>
 
 
 </asp:Content>
