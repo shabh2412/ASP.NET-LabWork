@@ -29,6 +29,11 @@ namespace HealthyCalories
         protected void calTotal_Click(object sender, EventArgs e)
         {
             count = int.Parse(itemInput.Text);
+            int fats, proteins, carbs;
+            fats = int.Parse(fatInput.Text);
+            proteins = int.Parse(proInput.Text);
+            carbs = int.Parse(carInput.Text);
+            singleItemCalorie = (9 * fats) + (4 * (carbs + proteins));
             totalCalories = singleItemCalorie * count;
             totalCal.Text = Convert.ToString(totalCalories);
         }
